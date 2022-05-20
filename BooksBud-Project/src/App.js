@@ -21,7 +21,7 @@ function App() {
         <Route path="/new-book">
           <NewBook />
         </Route>
-        {/* <Route path="/three-dim" exact>
+        {/*  <Route path="/three-dim" exact>
           <ThreeDim />
         </Route> */}
         <Route path="*">
