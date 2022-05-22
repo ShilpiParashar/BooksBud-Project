@@ -4,13 +4,15 @@ import NewBook from "./pages/NewBook";
 import BookDetail from "./pages/BookDetail";
 import Layout from "./components/layout/Layout";
 import NotFound from "./pages/NotFound";
-
+import HomePage from "./pages/HomePage";
+import LoginPage from "./pages/LoginPage";
+import About from "./pages/About";
 function App() {
   return (
     <Layout>
       <Switch>
         <Route path="/" exact>
-          <Redirect to="/books" />
+          <Redirect to="/home" />
         </Route>
         <Route path="/books" exact>
           <AllBooks />
@@ -20,6 +22,15 @@ function App() {
         </Route>
         <Route path="/new-book">
           <NewBook />
+        </Route>
+        <Route path="/home" exact>
+          <HomePage />
+        </Route>
+        <Route path="/login">
+          <LoginPage />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         {/*  <Route path="/three-dim" exact>
           <ThreeDim />

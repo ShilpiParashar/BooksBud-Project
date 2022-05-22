@@ -3,9 +3,23 @@ import { NavLink } from "react-router-dom";
 const MainNavigation = () => {
   return (
     <header className={styles.header}>
-      <div className={styles.logo}>BooksBud</div>
+      <div className={styles.logo}>
+        <NavLink to="/home" activeClassName={styles.active}>
+          BooksBud
+        </NavLink>
+      </div>
       <nav className={styles.nav}>
         <ul>
+          <li>
+            <NavLink to="/about" activeClassName={styles.active}>
+              About
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/login" activeClassName={styles.active}>
+              Login
+            </NavLink>
+          </li>
           <li>
             <NavLink to="/books" activeClassName={styles.active}>
               Buy Books

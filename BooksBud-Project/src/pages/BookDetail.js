@@ -6,7 +6,6 @@ import useHttp from "../hooks/use-http";
 import { getSingleBook } from "../lib/api";
 import LoadingSpinner from "../components/UI/LoadingSpinner";
 
-
 const BookDetail = () => {
   const params = useParams();
 
@@ -34,7 +33,6 @@ const BookDetail = () => {
   if (error) {
     return <p className="centered">{error}</p>;
   }
-  // const quote = DUMMY_QUOTES.find((quote) => quote.id === params.quoteId);
 
   if (!loadedBook.text) {
     return <p>No Book found</p>;
@@ -51,7 +49,7 @@ const BookDetail = () => {
         date={loadedBook.date}
         image={loadedBook.image}
       />
-      {/* <Route path="/quotes/some-id/comments"></Route> */}
+
       <Route path={`/books/${params.bookId}`} exact>
         <div className="centered">
           <Link className="btn--flat" to={`/books/${params.bookId}/comments`}>

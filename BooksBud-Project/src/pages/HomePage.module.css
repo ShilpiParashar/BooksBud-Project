@@ -1,0 +1,100 @@
+.textbox {
+  font-weight: 700;
+  color: #333;
+  letter-spacing: -0.5px;
+}
+.textbox h1 {
+  font-size: 3.4rem;
+  line-height: 1.05;
+  margin-bottom: 1.2rem;
+}
+.textbox h2 {
+  font-size: 1.6rem;
+  line-height: 1.2;
+  margin-bottom: 2.2rem;
+}
+
+/* .btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  padding: 1.2rem 2.4rem;
+  border-radius: 9px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  
+  transition: all 0.3s;
+} */
+/* .btn--full:link,
+.btn--full:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn--full:hover,
+.btn--full:active {
+  background-color: #cf711f;
+  color: #fff;
+}
+.btn--outline:link,
+.btn--outline:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn--outline:hover,
+.btn--outline:active {
+  background-color: #fdf2e9;
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.margin-right-sm {
+  margin-right: 1.2rem !important;
+}*/
+
+.container {
+  width: 100%;
+  padding: 0 5%;
+  background-color: white;
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 6rem;
+  align-items: center;
+}
+.textbox {
+  align-self: center;
+  padding: 0;
+}
+.textbox p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+  font-weight: 550;
+}
+.hero-img {
+  width: 90%;
+}
+
+.logo a:hover,
+.logo a:active,
+.logo a.active {
+  color: #e6fcfc;
+}
+.logo a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: #88dfdf;
+}
+
+/* .textbox h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+} */
+.textbox span {
+  color: #cf711f;
+  font-weight: 500;
+}

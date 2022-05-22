@@ -6,11 +6,6 @@ import NoBooksFound from "../components/books/NoBooksFound";
 import useHttp from "../hooks/use-http";
 import { getAllBooks } from "../lib/api";
 
-// const DUMMY_QUOTES = [
-//   { id: "q1", author: "Max", text: "Learning React is fun!" },
-//   { id: "q2", author: "Shilpi", text: "Learning React is great!" },
-// ];
-
 const AllBooks = () => {
   const {
     sendRequest,

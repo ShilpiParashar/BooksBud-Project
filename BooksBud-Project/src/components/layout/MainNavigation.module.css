@@ -8,9 +8,10 @@
   background-color: #008080;
 }
 
-.logo {
+.logo a {
   font-size: 2rem;
-  color: white;
+  text-decoration: none;
+  color: #88dfdf;
 }
 
 .nav ul {
@@ -33,5 +34,11 @@
 .nav a:hover,
 .nav a:active,
 .nav a.active {
+  color: #e6fcfc;
+}
+
+.logo a:hover,
+.logo a:active,
+.logo a.active {
   color: #e6fcfc;
 }
