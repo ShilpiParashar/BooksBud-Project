@@ -45,6 +45,7 @@ const BookDetail = () => {
         author={loadedBook.author}
         text={loadedBook.text}
         price={loadedBook.price}
+        rating={loadedBook.rating}
         seller={loadedBook.seller}
         phoneNumber={loadedBook.phoneNumber}
         email={loadedBook.email}

@@ -27,7 +27,9 @@ const NewBook = () => {
         <div>
           <div className={styles.textbox}>
             <h2>Vacant your bookshelves here!</h2>
-            <span> Sell your book and earn money or donate it for free.</span>
+            <p className={styles.small}>
+              Sell your book and earn money or donate it for free.
+            </p>
             <h3>
               In order to sell/donate your book fill the details so that
               interested buyer can get in touch with you.

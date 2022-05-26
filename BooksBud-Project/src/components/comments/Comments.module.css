@@ -1,7 +1,16 @@
 .comments {
   text-align: center;
-}
-
-.comments > button {
-  font-size: 1.25rem;
+  margin: 1rem auto;
+  padding: 1.5rem;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9px;
+  background-color: #fff;
+  height: auto;
+  width: 35rem;
+  /* background-image: linear-gradient(to top left, #39b385, #9be15d); */
+  border: 0.1rem solid #66c873;
+  color: #333;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
 }

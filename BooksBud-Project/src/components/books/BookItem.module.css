@@ -7,7 +7,7 @@
   box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.2);
   border-radius: 9px;
   background-color: white;
-  height: 18.1rem;
+  height: 18.2rem;
   width: 14.5rem;
   overflow: hidden;
 }
@@ -27,6 +27,7 @@ ul {
 
 li {
   margin-bottom: 0.6rem;
+  display: flex;
 }
 
 ion-icon {
@@ -50,11 +51,35 @@ span {
 }
 
 .item p {
-  margin: 0rem 0.5rem;
+  /* margin: 0rem 0.5rem;
   margin-bottom: 0.8rem;
-  height: 5rem;
+  height: 5rem; */
+
+  width: 12rem;
+  text-align: center;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  font-weight: 400;
+  padding: 0.3rem;
 }
 
 .actions {
   text-align: center;
+}
+
+.main {
+  display: flex;
+  align-items: space-between;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  margin-bottom: 0.4rem;
+}
+.img-box {
+  width: 4rem;
+  height: 5rem;
+  overflow: hidden;
+}
+.img {
+  width: 100%;
 }

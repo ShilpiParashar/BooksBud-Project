@@ -13,33 +13,39 @@
   justify-content: center;
   align-items: center;
 }
-
 .control {
   margin-bottom: 0.5rem;
 }
 
 .control label {
-  font-weight: bold;
+  color: #333;
+  font-size: 0.85rem;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.4;
   display: block;
   margin-bottom: 0.5rem;
 }
 
+.control input,
 .control textarea {
   font: inherit;
   padding: 0.35rem;
-  border-radius: 4px;
+  border-radius: 9px;
   background-color: #f0f0f0;
   border: 1px solid #c1d1d1;
   display: block;
   width: 100%;
-  font-size: 1.25rem;
+
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #777;
+  font-weight: 400;
 }
 
+.control input:focus,
 .control textarea:focus {
-  background-color: #cbf8f8;
-  outline-color: teal;
+  outline-color: #66c873;
 }
 
-.actions button {
-  font-size: 1.25rem;
-}
+

@@ -44,6 +44,7 @@ const BookList = (props) => {
               rating={book.rating}
               price={book.price}
               date={book.date}
+              image={book.image}
             />
           ))}
         </ul>

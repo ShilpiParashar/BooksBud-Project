@@ -48,10 +48,10 @@ const Comments = () => {
   }
   return (
     <section className={classes.comments}>
-      <h2>User Comments</h2>
+      <p className={"centered"}>User Feedback</p>
       {!isAddingComment && (
         <button className="btn" onClick={startAddCommentHandler}>
-          Add a Comment
+          Drop Comment
         </button>
       )}
       {isAddingComment && (

@@ -22,7 +22,7 @@
   font-size: 1.6rem;
   line-height: 1.2;
   font-weight: 400;
-  color: black;
+  color: #222;
 }
 .textbox span {
   color: #66c873;
@@ -31,6 +31,12 @@
   line-height: 1.2;
 }
 
+.small {
+  font-size: 1.2rem;
+  color: #66c873;
+  font-weight: 450;
+  line-height: 1.2;
+}
 .container {
   width: 100%;
   padding: 0 5%;
