@@ -1,13 +1,15 @@
-import classes from "./NoBooksFound.module.css";
 import { Link } from "react-router-dom";
+import { Fragment } from "react";
 const NoBooksFound = () => {
   return (
-    <div className={classes.nobooks}>
-      <p>No books found!</p>
-      <Link className="btn" to="/new-book">
-        Add a Book
-      </Link>
-    </div>
+    <Fragment>
+      <p className="centered">No Book found!</p>
+      <div className="actions">
+        <Link className="btn" to="/new-book">
+          Add a Book
+        </Link>
+      </div>
+    </Fragment>
   );
 };
 

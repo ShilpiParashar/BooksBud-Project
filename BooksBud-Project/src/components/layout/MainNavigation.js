@@ -10,31 +10,27 @@ const MainNavigation = () => {
       </div>
       <nav className={styles.nav}>
         <ul>
-          <li>
+          <li className={styles.otherchild}>
             <NavLink to="/about" activeClassName={styles.active}>
               About
             </NavLink>
           </li>
-          <li>
+
+          <li className={styles.otherchild}>
+            <NavLink to="/books" activeClassName={styles.active}>
+              Buy
+            </NavLink>
+          </li>
+          <li className={styles.otherchild}>
+            <NavLink to="/new-book" activeClassName={styles.active}>
+              Sell/Donate
+            </NavLink>
+          </li>
+          <li className={styles.lastchild}>
             <NavLink to="/login" activeClassName={styles.active}>
               Login
             </NavLink>
           </li>
-          <li>
-            <NavLink to="/books" activeClassName={styles.active}>
-              Buy Books
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/new-book" activeClassName={styles.active}>
-              Sell Books
-            </NavLink>
-          </li>
-          {/* <li>
-            <NavLink to="/three-dim" activeClassName={styles.active}>
-              Three Dim
-            </NavLink>
-          </li> */}
         </ul>
       </nav>
     </header>

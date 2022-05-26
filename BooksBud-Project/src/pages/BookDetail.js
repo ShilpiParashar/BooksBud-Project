@@ -35,7 +35,9 @@ const BookDetail = () => {
   }
 
   if (!loadedBook.text) {
-    return <p>No Book found</p>;
+    return (
+      <p className="centered"> Oops! Book details were not added properly.</p>
+    );
   }
   return (
     <Fragment>
@@ -52,8 +54,8 @@ const BookDetail = () => {
 
       <Route path={`/books/${params.bookId}`} exact>
         <div className="centered">
-          <Link className="btn--flat" to={`/books/${params.bookId}/comments`}>
-            Load Comments
+          <Link className="btn" to={`/books/${params.bookId}/comments`}>
+            Share your experience with us!
           </Link>
         </div>
       </Route>

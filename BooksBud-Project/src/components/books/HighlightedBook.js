@@ -8,6 +8,7 @@ const HighlightedBook = (props) => {
         <p>Book Title and Author's Name: {props.author}</p>
         <figcaption>Review: {props.text}</figcaption>
         <figcaption>Price: {props.price}</figcaption>
+        <figcaption>Rating: {props.rating}</figcaption>
         <figcaption>Seller's Name: {props.seller}</figcaption>
         <figcaption>Contact Number: {props.phoneNumber}</figcaption>
         <figcaption>Email Address: {props.email}</figcaption>

@@ -29,23 +29,25 @@ const BookList = (props) => {
   };
   return (
     <Fragment>
-      <div className={classes.sorting}>
-        <button onClick={changeSortingHandler}>
-          Sort {isSortingAscending ? "Descending" : "Ascending"}
-        </button>
+      <div className={classes.section}>
+        <div className={classes.sorting}>
+          <button onClick={changeSortingHandler}>
+            Sort {isSortingAscending ? "Descending" : "Ascending"}
+          </button>
+        </div>
+        <ul className={classes.list}>
+          {sortedBooks.map((book) => (
+            <BookItem
+              key={book.id}
+              id={book.id}
+              author={book.author}
+              rating={book.rating}
+              price={book.price}
+              date={book.date}
+            />
+          ))}
+        </ul>
       </div>
-      <ul className={classes.list}>
-        {sortedBooks.map((book) => (
-          <BookItem
-            key={book.id}
-            id={book.id}
-            author={book.author}
-            text={book.text}
-            price={book.price}
-            date={book.date}
-          />
-        ))}
-      </ul>
     </Fragment>
   );
 };

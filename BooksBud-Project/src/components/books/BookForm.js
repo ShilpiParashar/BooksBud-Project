@@ -26,6 +26,7 @@ const BookForm = (props) => {
   const authorInputRef = useRef();
   const textInputRef = useRef();
   const priceInputRef = useRef();
+  const ratingInputRef = useRef();
   const sellerInputRef = useRef();
   const phoneNumberInputRef = useRef();
   const emailInputRef = useRef();
@@ -38,6 +39,7 @@ const BookForm = (props) => {
     const enteredAuthor = authorInputRef.current.value;
     const enteredText = textInputRef.current.value;
     const enteredPrice = priceInputRef.current.value;
+    const enteredRating = ratingInputRef.current.value;
     const enteredSeller = sellerInputRef.current.value;
     const enteredPhoneNumber = phoneNumberInputRef.current.value;
     const enteredEmail = emailInputRef.current.value;
@@ -50,6 +52,7 @@ const BookForm = (props) => {
       author: enteredAuthor,
       text: enteredText,
       price: enteredPrice,
+      rating: enteredRating,
       seller: enteredSeller,
       phoneNumber: enteredPhoneNumber,
       email: enteredEmail,
@@ -88,27 +91,56 @@ const BookForm = (props) => {
 
           <div className={classes.control}>
             <label htmlFor="author">Book Title and Author's Name</label>
-            <input type="text" id="author" ref={authorInputRef} />
+            <textarea
+              type="text"
+              rows="2"
+              id="author"
+              ref={authorInputRef}
+            ></textarea>
+          </div>
+          <div className={classes.control}>
+            <label htmlFor="text">Review</label>
+            <input id="text" type="text" ref={textInputRef} />
           </div>
           <div className={classes.control}>
             <label htmlFor="price">Price</label>
             <input type="number" id="price" ref={priceInputRef} />
           </div>
           <div className={classes.control}>
-            <label htmlFor="text">Review</label>
-            <textarea id="text" rows="5" ref={textInputRef}></textarea>
+            <label htmlFor="rating">Rating</label>
+            <input
+              type="number"
+              id="rating"
+              decimalslimit={1}
+              max="5"
+              min="0"
+              step="0.1"
+              ref={ratingInputRef}
+            />
           </div>
           <div className={classes.control}>
-            <label htmlFor="seller">Seller's Name</label>
+            <label htmlFor="seller">Your Name</label>
             <input type="text" id="seller" ref={sellerInputRef} />
           </div>
           <div className={classes.control}>
             <label htmlFor="phoneNumber">Contact Number</label>
-            <input type="number" id="phoneNumber" ref={phoneNumberInputRef} />
+            <input
+              type="text"
+              id="phoneNumber"
+              maxlength="10"
+              title="Please enter a valid phone number!"
+              pattern="[1-9]{1}[0-9]{9}"
+              ref={phoneNumberInputRef}
+            />
           </div>
           <div className={classes.control}>
             <label htmlFor="email">Email Address</label>
-            <input type="email" id="email" ref={emailInputRef} />
+            <input
+              type="email"
+              id="email"
+              title="Please enter a valid e-mail Address"
+              ref={emailInputRef}
+            />
           </div>
           <div className={classes.control}>
             <label htmlFor="date">Date of posting</label>
@@ -124,7 +156,7 @@ const BookForm = (props) => {
               // onChange={() => setFiles(imageInputRef.current.files[0])}
             />
           </div>
-          <div className={classes.actions}>
+          <div className="actions">
             <button onClick={finishEnteringHandler} className="btn">
               Add Book
             </button>
