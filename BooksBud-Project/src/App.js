@@ -6,7 +6,7 @@ import Layout from "./components/layout/Layout";
 import NotFound from "./pages/NotFound";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
-import About from "./pages/AboutPage";
+import AboutPage from "./pages/AboutPage";
 function App() {
   return (
     <Layout>
@@ -30,7 +30,7 @@ function App() {
           <LoginPage />
         </Route>
         <Route path="/about">
-          <About />
+          <AboutPage />
         </Route>
         {/*  <Route path="/three-dim" exact>
           <ThreeDim />

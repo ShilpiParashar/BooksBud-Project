@@ -97,3 +97,35 @@ export async function getAllComments(bookId) {
 
   return transformedComments;
 }
+
+export async function addLogin(loginData) {
+  const response = await fetch(`${FIREBASE_DOMAIN}/login.json`, {
+    method: "POST",
+    body: JSON.stringify(loginData),
+    headers: {
+      "Content-Type": "application/json",
+    },
+  });
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Could not create book.");
+  }
+  return null;
+}
+
+export async function getSinglelogin(loginId) {
+  const response = await fetch(`${FIREBASE_DOMAIN}/login/${loginId}.json`);
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || "Could not fetch book.");
+  }
+
+  const loginObj = {
+    id: loginId,
+    ...data,
+  };
+
+  return loginObj;
+}

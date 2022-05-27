@@ -1,9 +1,19 @@
 import { Fragment } from "react";
 import styles from "./HomePage.module.css";
+import { useTypewriter } from "react-simple-typewriter";
 import bookImage from "../assests/stack.jpg";
 import groupImage from "../assests/group.jpg";
 
 const AboutPage = () => {
+  const { text } = useTypewriter({
+    words: [
+      "Be the change that you wish to see in the world. -Mahatma Gandhi",
+      "If you love your book let it go! -Unknown",
+      "When you possesses a book you are enriched. But when you pass it on you are enriched threefold. -Henry Miller",
+    ],
+    loop: [0],
+  });
+
   return (
     <Fragment>
       <div className={styles.container}>
@@ -17,7 +27,6 @@ const AboutPage = () => {
             </h3>
 
             <p className={styles.small}>
-              {" "}
               <ion-icon name="library"></ion-icon>Read, Release & Reuse
             </p>
 
@@ -69,6 +78,9 @@ const AboutPage = () => {
             </div>
           </div>
         </section>
+        <div className={styles.quotebox}>
+          <figCaption> "{text}"</figCaption>
+        </div>
       </div>
     </Fragment>
   );

@@ -45,7 +45,7 @@
 .hero-section {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 7rem;
+  column-gap: 7rem;
   align-items: center;
 }
 
@@ -105,4 +105,20 @@
 
 .flex {
   display: flex;
+}
+
+.quotebox {
+  margin: 2rem auto;
+  text-align: center;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 15px 25px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 9px;
+  background-color: white;
+  height: 7rem;
+  width: 45rem;
+  overflow: hidden;
+  margin-bottom: 2rem;
 }
