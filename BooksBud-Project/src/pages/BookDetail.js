@@ -36,7 +36,7 @@ const BookDetail = () => {
 
   if (!loadedBook.text) {
     return (
-      <p className="centered"> Oops! Book details were not added properly.</p>
+      <p className="centered"> Oops! Book details are not added properly.</p>
     );
   }
   return (
@@ -54,7 +54,7 @@ const BookDetail = () => {
       />
 
       <Route path={`/books/${params.bookId}`} exact>
-        <div className="centered">
+        <div className="special">
           <Link className="btn" to={`/books/${params.bookId}/comments`}>
             Share your experience with us!
           </Link>

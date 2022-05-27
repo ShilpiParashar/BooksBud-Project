@@ -14,7 +14,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #222;
+  color: #0d4982;
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+.special {
+  margin: 3rem auto;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #32506c;
   font-size: 1.6rem;
   line-height: 1.2;
   font-weight: 400;
@@ -46,9 +58,8 @@ body {
 
 .btn:hover,
 .btn:active {
-  background-image: linear-gradient(to top left, #fff, #fff);
-  color: #66c873;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3);
+  background-image: linear-gradient(to top left, #9be15d, #39b385);
+  color: #fff;
 }
 
 .actions {

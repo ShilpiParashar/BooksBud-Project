@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useHistory } from "react-router-dom";
 import styles from "./HomePage.module.css";
-import girlImage from "../assests/aero.jpg";
+import bookImage from "../assests/bookself.jpg";
 
 import BookForm from "../components/books/BookForm";
 import useHttp from "../hooks/use-http";
@@ -37,9 +37,9 @@ const NewBook = () => {
           </div>
           <div className={styles["hero-img-box"]}>
             <img
-              src={girlImage}
+              src={bookImage}
               className={styles["hero-img"]}
-              alt="Boy sitting on books"
+              alt="Bookshelf"
             />
           </div>
         </div>

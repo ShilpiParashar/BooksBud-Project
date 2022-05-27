@@ -14,6 +14,7 @@
 
 .item:hover {
   transform: translateY(-1rem);
+  transition-duration: 0.5s;
 }
 
 ul {
@@ -37,7 +38,6 @@ ion-icon {
   margin-right: 0.8rem;
 }
 span {
-  color: #333;
   font-size: 0.85rem;
   font-family: inherit;
   font-weight: 400;
@@ -55,6 +55,7 @@ span {
   margin-bottom: 0.8rem;
   height: 5rem; */
 
+  color: #0d4982;
   width: 12rem;
   text-align: center;
   font-size: 1.4rem;
@@ -73,7 +74,8 @@ span {
   justify-content: center;
   align-items: center;
   height: 5rem;
-  margin-bottom: 0.4rem;
+  margin-bottom: 1.3rem;
+  margin-top: 0.5rem;
 }
 .img-box {
   width: 4rem;

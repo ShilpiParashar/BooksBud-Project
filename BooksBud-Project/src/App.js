@@ -6,7 +6,7 @@ import Layout from "./components/layout/Layout";
 import NotFound from "./pages/NotFound";
 import HomePage from "./pages/HomePage";
 import LoginPage from "./pages/LoginPage";
-import About from "./pages/About";
+import About from "./pages/AboutPage";
 function App() {
   return (
     <Layout>

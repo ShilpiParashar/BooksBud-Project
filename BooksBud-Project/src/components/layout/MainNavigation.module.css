@@ -7,11 +7,23 @@
   align-items: center;
   background-image: linear-gradient(to top left, #9be15d, #39b385);
 }
+.logo ion-icon {
+  color: #fff;
+  height: 2rem;
+  width: 2rem;
+
+  /* margin-right: 1.2rem; */
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
 
 .logo a {
   font-size: 2rem;
   text-decoration: none;
-  color: #333;
+  color: #030f1a;
 }
 
 .nav ul {
@@ -38,18 +50,21 @@
   background-color: #fff;
   padding: 0.4rem 1.5rem;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
-  color: #333;
+  color: #32506c;
 }
 
 .nav a {
   text-decoration: none;
-  color: #333;
 }
 
 .lastchild a:hover,
 .lastchild a:active,
 .lastchild a.active {
   color: #66c873;
+}
+
+.otherchild a {
+  color: #030f1a;
 }
 
 .otherchild a:hover,

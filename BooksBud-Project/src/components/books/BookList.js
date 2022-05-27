@@ -25,14 +25,18 @@ const BookList = (props) => {
   const sortedBooks = sortBooks(props.books, isSortingAscending);
 
   const changeSortingHandler = () => {
-    history.push("/books?sort=" + (isSortingAscending ? "desc" : "asc"));
+    history.push({
+      pathname: location.pathname,
+      search: `?sort=${isSortingAscending ? "desc" : "asc"}`,
+    });
   };
   return (
     <Fragment>
       <div className={classes.section}>
         <div className={classes.sorting}>
           <button onClick={changeSortingHandler}>
-            Sort {isSortingAscending ? "Descending" : "Ascending"}
+            <ion-icon name="swap-vertical-outline"></ion-icon>
+            Show {isSortingAscending ? "Recent Uploads" : "Old Uploads"}
           </button>
         </div>
         <ul className={classes.list}>

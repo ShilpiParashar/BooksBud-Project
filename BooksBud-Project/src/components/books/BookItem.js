@@ -11,7 +11,7 @@ const BookItem = (props) => {
         <p>{props.author}</p>
         <div className={classes["img-box"]}>
           <img src={bookImage} className={classes.img} alt="book pic" />
-          {props.image}
+          {/* {props.image} */}
         </div>
       </div>
 

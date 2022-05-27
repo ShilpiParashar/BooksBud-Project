@@ -1,11 +1,7 @@
 import classes from "./CommentItem.module.css";
 
 const CommentItem = (props) => {
-  return (
-    // <li className={classes.small}>
-    <p className={classes.small}>"{props.text}"</p>
-    // </li>
-  );
+  return <p className={classes.small}>"{props.text}"</p>;
 };
 
 export default CommentItem;

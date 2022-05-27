@@ -1,16 +1,21 @@
 .comments {
-  text-align: center;
   margin: 1rem auto;
   padding: 1.5rem;
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   border-radius: 9px;
   background-color: #fff;
   height: auto;
-  width: 35rem;
-  /* background-image: linear-gradient(to top left, #39b385, #9be15d); */
-  border: 0.1rem solid #66c873;
+  width: 24rem;
+  color: #32506c;
+}
+.heading {
+  margin: 1rem;
+  text-align: center;
   color: #333;
-  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+  font-size: 1.6rem;
+  line-height: 1.2;
+  font-weight: 400;
 }

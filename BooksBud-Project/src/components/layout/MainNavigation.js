@@ -4,6 +4,7 @@ const MainNavigation = () => {
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
+        <ion-icon name="book-outline"></ion-icon>
         <NavLink to="/home" activeClassName={styles.active}>
           BooksBud
         </NavLink>

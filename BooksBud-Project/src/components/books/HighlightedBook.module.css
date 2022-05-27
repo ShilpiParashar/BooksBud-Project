@@ -31,6 +31,7 @@
   height: 23rem;
   width: 45rem;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
 
 /* .item:hover {
@@ -60,7 +61,7 @@ ion-icon {
 }
 
 span {
-  color: #333;
+  color: #32506c;
   font-size: 0.85rem;
   font-family: inherit;
   font-weight: 400;

@@ -2,7 +2,7 @@ import { Fragment, React } from "react";
 import { Link } from "react-router-dom";
 import styles from "./HomePage.module.css";
 import { useTypewriter } from "react-simple-typewriter";
-import girlImage from "../assests/bookself.jpg";
+import girlImage from "../assests/girl.jpg";
 
 const HomePage = () => {
   const { text } = useTypewriter({
@@ -15,7 +15,7 @@ const HomePage = () => {
       <div className={styles.container}>
         <section className={styles["hero-section"]}>
           <div className={styles.textbox}>
-            <h1>Second Hand Bookshop</h1>
+            <h1>Second hand Books Shop</h1>
             <h2>
               For
               <span> | {text}</span>

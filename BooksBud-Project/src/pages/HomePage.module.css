@@ -1,28 +1,27 @@
 .textbox {
   font-family: inherit;
   align-self: center;
-  color: #333;
   letter-spacing: -0.5px;
   padding: 0 3%;
 }
 .textbox h3 {
   font-size: 0.9rem;
   line-height: 1.4;
-  color: #777;
+  color: #32506c;
   margin-bottom: 2.2rem;
-  font-weight: 450;
+  font-weight: 410;
 }
 .textbox h1 {
   font-size: 2.8rem;
   line-height: 1;
   font-weight: 600;
-  color: #555;
+  color: #0d4982;
 }
 .textbox h2 {
   font-size: 1.6rem;
   line-height: 1.2;
   font-weight: 400;
-  color: #222;
+  color: #0d4982;
 }
 .textbox span {
   color: #66c873;
@@ -51,7 +50,7 @@
 }
 
 .hero-img {
-  width: 90%;
+  width: 96%;
 }
 
 .btn {
@@ -84,7 +83,7 @@
 .btn--outline:visited {
   border-radius: 9px;
   border: 0.1rem solid #66c873;
-  color: #333;
+  color: #0d4982;
   padding: 0.66rem 1.5rem;
   background-color: #fff;
   text-decoration: none;
@@ -95,4 +94,15 @@
 .btn--outline:active {
   background-color: #f0f0f0;
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.flex ion-icon {
+  color: #32506c;
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+}
+
+.flex {
+  display: flex;
 }
