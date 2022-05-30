@@ -32,9 +32,6 @@ function App() {
         <Route path="/about">
           <AboutPage />
         </Route>
-        {/*  <Route path="/three-dim" exact>
-          <ThreeDim />
-        </Route> */}
         <Route path="*">
           <NotFound />
         </Route>

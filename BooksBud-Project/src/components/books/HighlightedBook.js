@@ -1,6 +1,5 @@
 import { Fragment } from "react";
 import classes from "./HighlightedBook.module.css";
-import bookImage from "../../assests/front.jpeg";
 
 const HighlightedBook = (props) => {
   return (
@@ -56,9 +55,13 @@ const HighlightedBook = (props) => {
                 </ul>
               </div>
             </div>
+
             <div className={classes["img-box"]}>
-              <img src={bookImage} className={classes.img} alt="book pic" />
-              {/* {props.image} */}
+              <img
+                src={props.image}
+                className={classes.img}
+                alt="second hand book"
+              />
             </div>
           </section>
         </li>

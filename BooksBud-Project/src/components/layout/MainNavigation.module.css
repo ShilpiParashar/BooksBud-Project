@@ -11,8 +11,6 @@
   color: #fff;
   height: 2rem;
   width: 2rem;
-
-  /* margin-right: 1.2rem; */
 }
 
 .logo {
@@ -50,7 +48,7 @@
   background-color: #fff;
   padding: 0.4rem 1.5rem;
   box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
-  color: #32506c;
+  color: #0d4982;
 }
 
 .nav a {

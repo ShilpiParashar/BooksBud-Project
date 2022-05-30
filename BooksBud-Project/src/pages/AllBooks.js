@@ -29,6 +29,7 @@ const AllBooks = () => {
   if (error) {
     return <p className="centered focused">{error}</p>;
   }
+  console.log("loadedBooks", loadedBooks);
 
   if (status === "completed" && (!loadedBooks || loadedBooks.length === 0)) {
     return <NoBooksFound />;

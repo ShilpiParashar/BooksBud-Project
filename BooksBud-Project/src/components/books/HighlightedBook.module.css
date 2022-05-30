@@ -1,7 +1,6 @@
 .hero-section {
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
 }
 
 .container {
@@ -33,10 +32,6 @@
   overflow: hidden;
   margin-bottom: 2rem;
 }
-
-/* .item:hover {
-  transform: translateY(-1rem);
-} */
 
 ul {
   list-style: none;
@@ -84,6 +79,3 @@ span {
   padding: 1rem;
 }
 
-/* .actions {
-  text-align: center;
-} */

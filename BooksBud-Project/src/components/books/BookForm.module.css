@@ -46,3 +46,6 @@
 .control textarea:focus {
   outline-color: #66c873;
 }
+.actions {
+  text-align: center;
+}

@@ -1,17 +1,18 @@
 import { Link } from "react-router-dom";
 import classes from "./BookItem.module.css";
-import bookImage from "../../assests/front.jpeg";
 
 const BookItem = (props) => {
+  console.log("props.image", props.image);
   return (
     <li className={classes.item}>
-      {/* <p className="centered">{props.author}</p> */}
-
       <div className={classes.main}>
         <p>{props.author}</p>
         <div className={classes["img-box"]}>
-          <img src={bookImage} className={classes.img} alt="book pic" />
-          {/* {props.image} */}
+          <img
+            src={props.image}
+            className={classes.img}
+            alt="second hand book"
+          />
         </div>
       </div>
 
