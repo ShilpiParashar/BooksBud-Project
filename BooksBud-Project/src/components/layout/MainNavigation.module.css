@@ -51,6 +51,15 @@
   color: #0d4982;
 }
 
+.specialchild {
+  border: none;
+  border-radius: 9px;
+  cursor: pointer;
+  background-color: #fff;
+  padding: 0.4rem 1.5rem;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.2);
+  color: #0d4982;
+}
 .nav a {
   text-decoration: none;
 }
@@ -58,6 +67,10 @@
 .lastchild a:hover,
 .lastchild a:active,
 .lastchild a.active {
+  color: #66c873;
+}
+.specialchild a:hover,
+.specialchild a:active {
   color: #66c873;
 }
 

@@ -1,6 +1,16 @@
+import { useContext } from "react";
 import styles from "./MainNavigation.module.css";
 import { NavLink } from "react-router-dom";
+import AuthContext from "../../store/auth-context";
 const MainNavigation = () => {
+  const authCtx = useContext(AuthContext);
+  const isLoggedIn = authCtx.isLoggedIn;
+
+  const logoutHandler = () => {
+    authCtx.logout();
+    // optional: redirect the user
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.logo}>
@@ -16,22 +26,38 @@ const MainNavigation = () => {
               About
             </NavLink>
           </li>
-
-          <li className={styles.otherchild}>
-            <NavLink to="/books" activeClassName={styles.active}>
-              Buy
-            </NavLink>
-          </li>
-          <li className={styles.otherchild}>
-            <NavLink to="/new-book" activeClassName={styles.active}>
-              Sell/Donate
-            </NavLink>
-          </li>
-          <li className={styles.lastchild}>
-            <NavLink to="/login" activeClassName={styles.active}>
-              Login
-            </NavLink>
-          </li>
+          {isLoggedIn && (
+            <li className={styles.otherchild}>
+              <NavLink to="/books" activeClassName={styles.active}>
+                Buy
+              </NavLink>
+            </li>
+          )}
+          {isLoggedIn && (
+            <li className={styles.otherchild}>
+              <NavLink to="/new-book" activeClassName={styles.active}>
+                Sell/Donate
+              </NavLink>
+            </li>
+          )}
+          {!isLoggedIn && (
+            <li className={styles.lastchild}>
+              <NavLink to="/auth" activeClassName={styles.active}>
+                Signup/Login
+              </NavLink>
+            </li>
+          )}
+          {isLoggedIn && (
+            <li className={styles.specialchild}>
+              <NavLink
+                to="/home"
+                activeClassName={styles.active}
+                onClick={logoutHandler}
+              >
+                Logout
+              </NavLink>
+            </li>
+          )}
         </ul>
       </nav>
     </header>

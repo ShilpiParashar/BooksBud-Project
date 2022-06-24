@@ -48,4 +48,33 @@
 }
 .actions {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+span h1 {
+  text-align: center;
+  color: #66c873;
+  font-size: 1.2rem;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.toggle {
+  margin-top: 0.5rem;
+  background-color: transparent;
+  color: #32506c;
+  border: none;
+  padding: 0.15rem 1.5rem;
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.toggle:hover {
+  background-color: transparent;
+  color: #66c873;
 }

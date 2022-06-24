@@ -3,8 +3,13 @@ import { Link } from "react-router-dom";
 import styles from "./HomePage.module.css";
 import { useTypewriter } from "react-simple-typewriter";
 import girlImage from "../assests/girl.jpg";
+import { useContext } from "react";
+import AuthContext from "../store/auth-context";
 
 const HomePage = () => {
+  const authCtx = useContext(AuthContext);
+  const isLoggedIn = authCtx.isLoggedIn;
+
   const { text } = useTypewriter({
     words: ["Students", "Novel Readers", "Book Lovers"],
     loop: [0],
@@ -27,9 +32,11 @@ const HomePage = () => {
             </h3>
 
             <div className={styles.btn}>
-              <Link to="/login" className={styles["btn--full"]}>
-                Get started
-              </Link>
+              {!isLoggedIn && (
+                <Link to="/auth" className={styles["btn--full"]}>
+                  Get started
+                </Link>
+              )}
               <Link to="/about" className={styles["btn--outline"]}>
                 Learn more &rarr;
               </Link>

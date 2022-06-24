@@ -14,6 +14,7 @@ const validEmailRegex = RegExp(
 );
 const BookForm = (props) => {
   const [imageUpload, setImageUpload] = useState(null);
+  //eslint-disable-next-line
   const [imageUrls, setImageUrls] = useState([]);
   const [state, setState] = useState({
     enteredAuthor: "",
@@ -172,6 +173,7 @@ const BookForm = (props) => {
     });
     let invalid = { ...state.invalid };
     let stateErrors = { ...state.errors };
+
     // if (state.enteredAuthor == "") {
     //   invalid.enteredAuthor = true;
     //   stateErrors.enteredAuthor = state.this_field_is_required;

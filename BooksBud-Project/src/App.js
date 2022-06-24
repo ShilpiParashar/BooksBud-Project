@@ -5,7 +5,7 @@ import BookDetail from "./pages/BookDetail";
 import Layout from "./components/layout/Layout";
 import NotFound from "./pages/NotFound";
 import HomePage from "./pages/HomePage";
-import LoginPage from "./pages/LoginPage";
+import AuthPage from "./pages/AuthPage";
 import AboutPage from "./pages/AboutPage";
 function App() {
   return (
@@ -26,8 +26,8 @@ function App() {
         <Route path="/home" exact>
           <HomePage />
         </Route>
-        <Route path="/login">
-          <LoginPage />
+        <Route path="/auth">
+          <AuthPage />
         </Route>
         <Route path="/about">
           <AboutPage />
